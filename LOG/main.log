@@ -1,0 +1,68 @@
+Changelog main.sh
+
+# 4/7/2025 0.6
+NIEUW:
+- user menu toegevoegd
+- info optie toegevoegd aan het menu
+
+PATCH:
+- backup verbeterd:
+    laadbalk toegevoegt.
+- restore verbeterd
+    je kan nu alle backups zien in de manual folder
+    optie om terug te gaan naar het menu
+
+# 4/8/2025 0.73
+NIEUW:
+-
+
+PATCH:
+- restore verbeterd
+    er is nu een laadbalk toegevoegd
+- backup verbeterd:
+    je kan nu ook de backups zien in de manual folder
+    optie om terug te gaan naar het menu
+
+# 5/6/2025 0.85
+NIEUW:
+- Comment in main.sh
+    Aangegeven dat main.log bestaat, en waar die is
+
+PATCH:
+- Restore heeft nu een laadbalk
+    Als je nu een backup restored, kan je zien hoever die is
+- Restore veranderd
+    Restore werkt nu anders,
+    + check of de locatie waar de backup heengaat bestaat
+    + als de locatie niet bestaat, dan wordt die aangemaakt
+    + dubbele check of je zeker weet dat je de backup wilt restoren
+    - je krijgt niet meer alle beschikbare backups te zien
+
+# 5/9/2025 0.86
+NIEUW:
+- patchnotes van main.sh
+    je kan nu via het menu de patchnotes zien door
+    "patchnotes" in te voeren
+
+PATCH:
+- op een paar plekken de code verbeterd
+
+
+# 6/24/2025 1.0
+NIEUW:
+- Bij backup kan je nu aangeven waarvan je een backup wilt maken
+- de mogelijkheid om backups te verwijderen in het show_backup menu
+
+PATCH:
+- Versie aangepast op start scherm
+- kleine verbeteringen
+
+BUGS:
+# Menu ziet er vreemd uit na stoppen van restoren #
+    Als je gaat restoren, en je vult niks in, en cancelt op het laatste moment,
+    is er kans dat het menu er gek uit gaat zien
+        
+TODO:
+- makkelijker maken om de backups te selecteren tijdens het restoren
+- optie om backup locatie te veranderen
+
