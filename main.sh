@@ -14,13 +14,13 @@ VERSION="1.0"
 # nu ook op Github
 
 # path variables
-default_backup_dir="/srv/www"
-manual_backup_dir="/mnt/backup/manual"
-hourly_backup_dir="/mnt/backup/hourly"
-daily_backup_dir="/mnt/backup/daily"
-weekly_backup_dir="/mnt/backup/weekly"
-monthly_backup_dir="/mnt/backup/monthly"
-log_file="/scripts/LOG/main.log"
+default_backup_dir=""
+manual_backup_dir=""
+hourly_backup_dir=""
+daily_backup_dir=""
+weekly_backup_dir=""
+monthly_backup_dir=""
+log_file=""
  
 clear
 

@@ -4,8 +4,8 @@
 # of als er iets mis gaat met de backup
 
 # dir's
-SOURCE_DIR="/srv/www" # hier maakt die een backup van
-BACKUP_ROOT="/mnt/backup" # hier komen de backups
+SOURCE_DIR="" # hier maakt die een backup van
+BACKUP_ROOT="" # hier komen de backups
 
 # date variabelen voor de naam van de backups
 CURRENT_DATE=$(date +"%Y-%m-%d")
