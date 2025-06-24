@@ -1,14 +1,12 @@
 #!/bin/sh
 # ====================================================
 # =                                                  =
-# =                Author: chris hijman              =
 # =                Version: 1.0                      =
 # =                                                  =
 # ====================================================
 
 # Voor update info zie LOG/main.log
 
-AUTHOR="chris hijman"
 VERSION="1.0"
 
 # nu ook op Github
@@ -27,7 +25,6 @@ clear
 menu() {
     echo "========================="
     echo "  Maintenance Script"
-    echo "  Author: $AUTHOR"
     echo "  Version: $VERSION"
     echo "========================="
     echo "options:"
