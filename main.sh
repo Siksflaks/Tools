@@ -5,11 +5,7 @@
 # =                                                  =
 # ====================================================
 
-# Voor update info zie LOG/main.log
-
 VERSION="1.0"
-
-# nu ook op Github
 
 # path variables
 default_backup_dir=""
