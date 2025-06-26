@@ -145,7 +145,6 @@ user_options() {
     echo "2. Delete user"
     echo "3. Change password"
     echo "4. Show users"
-    echo "5. Add user to group"
     echo "0. Go back"
     echo "========================="
     read -p "Select an option: " option
