@@ -145,6 +145,7 @@ user_options() {
     echo "2. Delete user"
     echo "3. Change password"
     echo "4. Show users"
+    echo "5. Add user to group"
     echo "0. Go back"
     echo "========================="
     read -p "Select an option: " option
@@ -166,8 +167,8 @@ user_options() {
             menu
             ;;
         *)
-            echo "Invalid option"
             user_options
+            echo "Invalid option"
             ;;
     esac
 }
@@ -176,11 +177,15 @@ add_user() {
     clear
     read -p "Enter username: " username
     read -p "Enter password: " password
-    useradd -m -s /bin/bash "$username"
-    echo "$username:$password" | chpasswd
-    echo "User $username added."
-    read -p "Press enter to continue..." key
-    user_options
+    read -p "Add user to root? y/n: " addroot
+    if [ "$addroot" = "y" ]; then
+        useradd -m -s /bin/bash -G sudo "$username"
+        echo "$username:$password" | chpasswd
+    elif ["$add-root" = "n"]; then
+        echo "user $username not added to root"
+        useradd -m -s /bin/bash "$username"
+        echo "$username:$password" | chpasswd
+    fi
 }
 
 delete_user() {
@@ -198,6 +203,7 @@ change_password() {
     read -p "Enter new password: " password
     echo "$username:$password" | chpasswd
     echo "Password for user $username changed."
+    read -p "press enter to continue..."
     user_options
 }
 
